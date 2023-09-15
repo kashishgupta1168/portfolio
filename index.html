@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/788a329b66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Kashish.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Kashish</span><br>Gupta From India</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------------------about------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/kashish_poto.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Hello there! I'm Iffat Rizvi, a web developer with a passion for crafting digital solutions that make an impact.I am currently pursuing my Bachelor of Technology in Computer Science from KIET Group of Institutions, where I have honed my skills and knowledge in this dynamic field. I thrive on solving complex problems with elegant, user-friendly solutions.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div>
+                       <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>HTML, CSS, JavaScript and React JS</li>
+                            <li><span>Java</span><br>Programming Language</li>
+                            <li><span>Problem Solving</span><br>Data Structures and Algorithm</li>
+                        </ul>
+                       </div> 
+                    <div class="tab-contents" id="experience">
+                        <ul>
+
+                            <li><span>June 2023 - July 2023</span><br>Front-end Web Development Internship at IBM SkillsBuils(Edunet Founddation)</li>
+                            <li><span>January 2023 - February 2023</span><br>Web Development at Oasis Infobyte</li>
+                            <li><span>May 2023 - June 2023</span><br>Cybersecurity Internship at Cisco</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-current</span><br>B.Tech in Computer Science at KIET Group of Institutions, Ghaziabad</li>
+                            <li><span>2019</span><br>10+2 from Little Flower House, Varanasi</li>
+                            <li><span>2017</span><br>10th from Happy Model School, Varanasi</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+   <!------------------------------------services-------------------> 
+
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Front-end</h2>
+                <p>I specialize in front-end development, harnessing the power of HTML, CSS, and JavaScript to craft visually captivating
+                and seamlessly responsive websites.Mockathon is a front-end development project that I'm particularly proud of. It's a testament to my proficiency in
+                crafting engaging and user-friendly web experiences.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>I have a strong portfolio of projects that showcase my expertise and creativity. One notable project is "Foodie's Theka", where I utilized the MERN stack to create a robust and scalable solution. The project emphasized a user-friendly interface with seamless navigation and responsivenes.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>DSA based Projects</h2>
+                <p>My proficiency in DSA equips me to tackle complex problems efficiently, providing effective solutions that meet your
+                project's requirements.I excel in implementing various data structures, tailoring them to your specific needs, whether it's arrays, linked
+                lists, trees, graphs, or others.One of my DSA based project is Music Player using doubly linked list that I have successfully completed.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------------------------portfolio------------------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/bgclients.jpg">
+                <div class="layer">
+                    <h3>Food Restaurant App</h3>
+                    <p>The app connects the restaurant to their customers.</p>
+                    <a href="https://github.com/kashishgupta1168/Foodie-s-Theaka"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/todo.webp">
+                <div class="layer">
+                    <h3>To do List</h3>
+                    <p>This  is a Frontend website where  you can add your daily work ,mark it as completed and delete it further. This can help you in keeping daily record of your work.</p>
+                    <a href="https://github.com/kashishgupta1168/To_do_List"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <!-- <div class="work">
+                <img src="images/mahatama Gandhi.jpg">
+                <div class="layer">
+                    <h3>A Tribute to the Father of Nation</h3>
+                    <p>This project is based</p>
+                    <a href="https://github.com/kashishgupta1168/Calc"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div> -->
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-----------------------contact-------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>kashishgupta603@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i>(+91) 7905731950</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kashish-gupta-16055422b/"><i class="fa-brands fa-linkedin"></i></a>
+
+                    <a href="https://instagram.com/gupta.kashish1105?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/kashishgupta1168"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="images/Iffat_Rizvi_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="emai" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright © Kahish. Made with<i class="fa-solid fa-heart"></i> Love</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right= "0";
+        }
+        function closemenu(){
+            sidemeu.style.right= "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxE9ONhqlZmzNIXqOvHe-cesZE7kMxsC4o5URq1JkV4JCnqbXGrQtwAeneqnEAgobmWVQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        ms.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
